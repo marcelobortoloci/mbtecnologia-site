@@ -8,9 +8,9 @@
 
 <title>MB Tecnologia | Soluções em TI</title>
 
-<meta name="description" content="MB Tecnologia oferece soluções em infraestrutura de TI, segurança da informação, backup em nuvem e suporte técnico especializado para empresas.">
+<meta name="description" content="Infraestrutura de TI, segurança da informação, backup em nuvem e suporte técnico especializado para empresas.">
 
-<meta name="keywords" content="suporte de TI, segurança da informação, backup em nuvem, infraestrutura de TI, suporte técnico empresas">
+<meta name="keywords" content="suporte TI, empresa de TI, segurança da informação, backup em nuvem, suporte técnico empresas">
 
 <meta name="author" content="MB Tecnologia">
 
@@ -23,7 +23,6 @@
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-<!-- Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
 <script>
 window.dataLayer = window.dataLayer || [];
@@ -45,6 +44,18 @@ scroll-behavior:smooth;
 body{
 background:#0f172a;
 color:white;
+overflow-x:hidden;
+}
+
+/* PARTICLES BACKGROUND */
+
+#particles-js{
+position:fixed;
+width:100%;
+height:100%;
+top:0;
+left:0;
+z-index:-1;
 }
 
 /* HEADER */
@@ -54,7 +65,8 @@ display:flex;
 justify-content:space-between;
 align-items:center;
 padding:20px 10%;
-background:#020617;
+background:rgba(2,6,23,0.85);
+backdrop-filter:blur(6px);
 position:sticky;
 top:0;
 z-index:100;
@@ -70,7 +82,7 @@ color:#38bdf8;
 }
 
 .logo img{
-width:32px;
+width:34px;
 }
 
 /* MENU */
@@ -90,31 +102,13 @@ color:#38bdf8;
 /* HERO */
 
 .hero{
-padding:120px 10%;
+padding:140px 10%;
 text-align:center;
 position:relative;
-background:linear-gradient(120deg,#020617,#1e293b);
-overflow:hidden;
-}
-
-.hero::before{
-content:"";
-position:absolute;
-top:50%;
-left:50%;
-transform:translate(-50%,-50%);
-width:200px;
-height:200px;
-background-image:url("images/user-original.png");
-background-size:contain;
-background-repeat:no-repeat;
-background-position:center;
-opacity:0.035;
-pointer-events:none;
 }
 
 .hero h1{
-font-size:44px;
+font-size:46px;
 margin-bottom:20px;
 }
 
@@ -145,7 +139,7 @@ background:#0ea5e9;
 /* SERVICES */
 
 .services{
-padding:80px 10%;
+padding:90px 10%;
 text-align:center;
 }
 
@@ -199,9 +193,9 @@ line-height:1.5;
 /* CONTACT */
 
 .contact{
-padding:80px 10%;
+padding:90px 10%;
 text-align:center;
-background:#020617;
+background:rgba(2,6,23,0.9);
 }
 
 .contact h2{
@@ -244,12 +238,10 @@ transition:0.3s;
 transform:scale(1.1);
 }
 
-/* ANIMATION */
-
 @media(max-width:768px){
 
 .hero h1{
-font-size:32px;
+font-size:34px;
 }
 
 .hero p{
@@ -263,6 +255,8 @@ font-size:16px;
 </head>
 
 <body>
+
+<div id="particles-js"></div>
 
 <header>
 
@@ -283,7 +277,7 @@ MB Tecnologia
 <h1>Soluções inteligentes em tecnologia</h1>
 
 <p>
-Infraestrutura, segurança e suporte especializado em TI para empresas que buscam estabilidade, produtividade e proteção digital.
+Infraestrutura, segurança e suporte especializado em TI para empresas que buscam estabilidade e crescimento.
 </p>
 
 <a class="btn" href="https://wa.me/5548992092208">
@@ -352,7 +346,42 @@ Falar no WhatsApp
 WhatsApp
 </a>
 
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
 <script>
+
+particlesJS("particles-js",{
+
+particles:{
+number:{value:80},
+size:{value:3},
+color:{value:"#38bdf8"},
+line_linked:{
+enable:true,
+distance:150,
+color:"#38bdf8",
+opacity:0.4,
+width:1
+},
+move:{
+enable:true,
+speed:2
+}
+},
+
+interactivity:{
+events:{
+onhover:{enable:true,mode:"grab"}
+},
+modes:{
+grab:{
+distance:140,
+line_linked:{opacity:1}
+}
+}
+}
+
+});
 
 const cards = document.querySelectorAll('.card');
 
