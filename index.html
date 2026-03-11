@@ -6,29 +6,28 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>MB Tecnologia | Suporte e Soluções em TI</title>
+<title>MB Tecnologia | Soluções em TI</title><!DOCTYPE html>
+<html lang="pt-br">
 
-<meta name="description" content="MB Tecnologia oferece suporte técnico, segurança da informação, infraestrutura e backup em nuvem para empresas.">
-<meta name="keywords" content="suporte TI, empresa de TI, backup em nuvem, segurança da informação, suporte técnico empresas">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>MB Tecnologia | Serviços em TI</title>
+
+<meta name="description" content="Infraestrutura de TI, segurança da informação, backup em nuvem e suporte técnico especializado para empresas.">
+
+<meta name="keywords" content="suporte TI, empresa de TI, segurança da informação, backup em nuvem, suporte técnico empresas">
+
 <meta name="author" content="MB Tecnologia">
 
-<!-- Open Graph (preview WhatsApp e redes sociais) -->
-
-<meta property="og:title" content="MB Tecnologia | Soluções em TI">
-<meta property="og:description" content="Infraestrutura, segurança da informação e suporte técnico especializado para empresas.">
-<meta property="og:image" content="images/user-original.png">
-<meta property="og:type" content="website">
-
 <link rel="icon" type="image/png" href="images/user-original.png">
-
-<!-- Google Fonts -->
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
 <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-<!-- Font Awesome -->
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
@@ -38,7 +37,7 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:'Poppins',sans-serif;
+font-family:'Poppins', sans-serif;
 scroll-behavior:smooth;
 }
 
@@ -48,7 +47,7 @@ color:white;
 overflow-x:hidden;
 }
 
-/* FUNDO PARTICULAS */
+/* PARTICULAS */
 
 #particles-js{
 position:fixed;
@@ -73,12 +72,14 @@ top:0;
 z-index:100;
 }
 
+/* LOGO PROFISSIONAL */
+
 .logo{
 display:flex;
 align-items:center;
 gap:12px;
-font-family:'Orbitron',sans-serif;
-font-size:30px;
+font-family:'Orbitron', sans-serif;
+font-size:32px;
 font-weight:700;
 letter-spacing:3px;
 color:#38bdf8;
@@ -88,6 +89,10 @@ text-transform:uppercase;
 .logo img{
 width:34px;
 filter:drop-shadow(0 0 6px rgba(56,189,248,0.7));
+}
+
+.logo span{
+text-shadow:0 0 10px rgba(56,189,248,0.6);
 }
 
 /* MENU */
@@ -119,7 +124,7 @@ margin-bottom:20px;
 .hero p{
 font-size:18px;
 color:#cbd5f5;
-max-width:700px;
+max-width:650px;
 margin:auto;
 line-height:1.6;
 }
@@ -222,7 +227,7 @@ color:#94a3b8;
 font-size:14px;
 }
 
-/* BOTÃO WHATSAPP */
+/* WHATSAPP */
 
 .whatsapp{
 position:fixed;
@@ -242,20 +247,380 @@ transition:0.3s;
 transform:scale(1.1);
 }
 
-@media(max-width:768px){
+</style>
+
+</head>
+
+<body>
+
+<div id="particles-js"></div>
+
+<header>
+
+<div class="logo">
+<img src="images/user-original.png">
+<span>MB Tecnologia</span>
+</div>
+
+<nav>
+<a href="#servicos">Serviços</a>
+<a href="#contato">Contato</a>
+</nav>
+
+</header>
+
+<section class="hero">
+
+<h1>Serviços de T.I e Backup em Nuvem</h1>
+
+<p>
+Infraestrutura, segurança e suporte especializado em TI para pequenas e médias empresas que buscam estabilidade e crescimento.
+</p>
+
+<a class="btn" href="https://wa.me/5548992092208">
+Solicitar Atendimento
+</a>
+
+</section>
+
+<section id="servicos" class="services">
+
+<h2>Nossos Serviços</h2>
+
+<div class="grid">
+
+<div class="card">
+<i class="fas fa-cloud"></i>
+<h3>Infraestrutura em Nuvem</h3>
+<p>Soluções escaláveis para armazenamento e gestão segura de dados.</p>
+</div>
+
+<div class="card">
+<i class="fas fa-shield-halved"></i>
+<h3>Segurança da Informação</h3>
+<p>Proteção contra ameaças digitais e gestão segura das informações.</p>
+</div>
+
+<div class="card">
+<i class="fas fa-database"></i>
+<h3>Backup de Dados em Nuvem</h3>
+<p>Backup automático com recuperação rápida e acesso remoto.</p>
+</div>
+
+<div class="card">
+<i class="fas fa-headset"></i>
+<h3>Suporte Técnico | Remoto</h3>
+<p>Atendimento especializado para manter sua infraestrutura estável.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="contato" class="contact">
+
+<h2>Contato</h2>
+
+<p>Fale conosco para suporte ou orçamento.</p>
+
+<div class="phone">
+📞 (48) 99209-2208
+</div>
+
+<a class="btn" href="https://wa.me/5548992092208">
+Falar no WhatsApp
+</a>
+
+</section>
+
+<footer>
+
+© 2026 MB Tecnologia — Todos os direitos reservados
+
+</footer>
+
+<a class="whatsapp" href="https://wa.me/5548992092208">
+WhatsApp
+</a>
+
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+<script>
+
+particlesJS("particles-js",{
+particles:{
+number:{value:80},
+size:{value:3},
+color:{value:"#38bdf8"},
+line_linked:{
+enable:true,
+distance:150,
+color:"#38bdf8",
+opacity:0.4,
+width:1
+},
+move:{
+enable:true,
+speed:2
+}
+},
+interactivity:{
+events:{onhover:{enable:true,mode:"grab"}},
+modes:{grab:{distance:140,line_linked:{opacity:1}}}
+}
+});
+
+const cards = document.querySelectorAll('.card');
+
+window.addEventListener('scroll', () => {
+
+cards.forEach(card => {
+
+const top = card.getBoundingClientRect().top;
+const windowHeight = window.innerHeight;
+
+if(top < windowHeight - 50){
+card.classList.add('show');
+}
+
+});
+
+});
+
+</script>
+
+</body>
+</html>
+
+<meta name="description" content="Infraestrutura de TI, segurança da informação, backup em nuvem e suporte técnico especializado para empresas.">
+
+<meta name="keywords" content="suporte TI, empresa de TI, segurança da informação, backup em nuvem, suporte técnico empresas">
+
+<meta name="author" content="MB Tecnologia">
+
+<link rel="icon" type="image/png" href="images/user-original.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins', sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#0f172a;
+color:white;
+overflow-x:hidden;
+}
+
+/* PARTICULAS */
+
+#particles-js{
+position:fixed;
+width:100%;
+height:100%;
+top:0;
+left:0;
+z-index:-1;
+}
+
+/* HEADER */
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 10%;
+background:rgba(2,6,23,0.85);
+backdrop-filter:blur(6px);
+position:sticky;
+top:0;
+z-index:100;
+}
+
+/* LOGO PROFISSIONAL */
+
+.logo{
+display:flex;
+align-items:center;
+gap:12px;
+font-family:'Orbitron', sans-serif;
+font-size:32px;
+font-weight:700;
+letter-spacing:3px;
+color:#38bdf8;
+text-transform:uppercase;
+}
+
+.logo img{
+width:34px;
+filter:drop-shadow(0 0 6px rgba(56,189,248,0.7));
+}
+
+.logo span{
+text-shadow:0 0 10px rgba(56,189,248,0.6);
+}
+
+/* MENU */
+
+nav a{
+color:white;
+margin-left:25px;
+text-decoration:none;
+font-size:16px;
+transition:0.3s;
+}
+
+nav a:hover{
+color:#38bdf8;
+}
+
+/* HERO */
+
+.hero{
+padding:140px 10%;
+text-align:center;
+}
 
 .hero h1{
-font-size:34px;
+font-size:46px;
+margin-bottom:20px;
 }
 
 .hero p{
-font-size:16px;
+font-size:18px;
+color:#cbd5f5;
+max-width:650px;
+margin:auto;
+line-height:1.6;
 }
 
-.logo{
+.btn{
+display:inline-block;
+margin-top:30px;
+padding:14px 28px;
+background:#38bdf8;
+color:#020617;
+font-weight:600;
+border-radius:8px;
+text-decoration:none;
+transition:0.3s;
+}
+
+.btn:hover{
+background:#0ea5e9;
+}
+
+/* SERVIÇOS */
+
+.services{
+padding:90px 10%;
+text-align:center;
+}
+
+.services h2{
+font-size:34px;
+margin-bottom:50px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+}
+
+.card{
+background:#1e293b;
+padding:30px;
+border-radius:10px;
+transition:0.3s;
+opacity:0;
+transform:translateY(40px);
+}
+
+.card.show{
+opacity:1;
+transform:translateY(0);
+}
+
+.card:hover{
+transform:translateY(-6px);
+box-shadow:0 10px 25px rgba(0,0,0,0.4);
+}
+
+.card i{
+font-size:34px;
+margin-bottom:15px;
+color:#38bdf8;
+}
+
+.card h3{
+margin-bottom:10px;
+font-size:18px;
+}
+
+.card p{
+color:#cbd5f5;
+font-size:14px;
+line-height:1.5;
+}
+
+/* CONTATO */
+
+.contact{
+padding:90px 10%;
+text-align:center;
+background:rgba(2,6,23,0.9);
+}
+
+.contact h2{
+font-size:34px;
+margin-bottom:15px;
+}
+
+.phone{
 font-size:22px;
+margin-top:15px;
 }
 
+/* FOOTER */
+
+footer{
+text-align:center;
+padding:20px;
+background:#020617;
+color:#94a3b8;
+font-size:14px;
+}
+
+/* WHATSAPP */
+
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+padding:15px 18px;
+border-radius:50px;
+font-size:18px;
+text-decoration:none;
+box-shadow:0 0 10px rgba(0,0,0,0.4);
+transition:0.3s;
+}
+
+.whatsapp:hover{
+transform:scale(1.1);
 }
 
 </style>
@@ -269,7 +634,7 @@ font-size:22px;
 <header>
 
 <div class="logo">
-<img src="images/user-original.png" alt="Logo MB Tecnologia">
+<img src="images/user-original.png">
 <span>MB Tecnologia</span>
 </div>
 
@@ -282,13 +647,13 @@ font-size:22px;
 
 <section class="hero">
 
-<h1>Soluções inteligentes em Tecnologia</h1>
+<h1>Soluções inteligentes em tecnologia</h1>
 
 <p>
-Infraestrutura, segurança da informação e suporte técnico especializado em TI para pequenas e médias empresas.
+Infraestrutura, segurança e suporte especializado em TI para empresas que buscam estabilidade e crescimento.
 </p>
 
-<a class="btn" href="https://wa.me/5548992092208?text=Olá%20gostaria%20de%20informações%20sobre%20serviços%20de%20TI">
+<a class="btn" href="https://wa.me/5548992092208">
 Solicitar Atendimento
 </a>
 
@@ -338,7 +703,7 @@ Solicitar Atendimento
 📞 (48) 99209-2208
 </div>
 
-<a class="btn" href="https://wa.me/5548992092208?text=Olá%20gostaria%20de%20informações%20sobre%20serviços%20de%20TI">
+<a class="btn" href="https://wa.me/5548992092208">
 Falar no WhatsApp
 </a>
 
@@ -350,11 +715,11 @@ Falar no WhatsApp
 
 </footer>
 
-<a class="whatsapp" href="https://wa.me/5548992092208?text=Olá%20preciso%20de%20suporte%20de%20TI">
-<i class="fab fa-whatsapp"></i>
+<a class="whatsapp" href="https://wa.me/5548992092208">
+WhatsApp
 </a>
 
-<script defer src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 
 <script>
 
@@ -381,16 +746,16 @@ modes:{grab:{distance:140,line_linked:{opacity:1}}}
 }
 });
 
-const cards=document.querySelectorAll('.card');
+const cards = document.querySelectorAll('.card');
 
-window.addEventListener('scroll',()=>{
+window.addEventListener('scroll', () => {
 
-cards.forEach(card=>{
+cards.forEach(card => {
 
-const top=card.getBoundingClientRect().top;
-const windowHeight=window.innerHeight;
+const top = card.getBoundingClientRect().top;
+const windowHeight = window.innerHeight;
 
-if(top<windowHeight-50){
+if(top < windowHeight - 50){
 card.classList.add('show');
 }
 
@@ -402,3 +767,5 @@ card.classList.add('show');
 
 </body>
 </html>
+
+
