@@ -19,11 +19,12 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+
 <script>
 window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
@@ -46,8 +47,6 @@ background:#0f172a;
 color:white;
 overflow-x:hidden;
 }
-
-/* PARTICLES BACKGROUND */
 
 #particles-js{
 position:fixed;
@@ -72,17 +71,22 @@ top:0;
 z-index:100;
 }
 
+/* LOGO PROFISSIONAL */
+
 .logo{
 display:flex;
 align-items:center;
-gap:10px;
+gap:12px;
+font-family:'Orbitron', sans-serif;
 font-size:30px;
 font-weight:600;
+letter-spacing:2px;
 color:#38bdf8;
 }
 
 .logo img{
 width:34px;
+filter:drop-shadow(0 0 6px rgba(56,189,248,0.6));
 }
 
 /* MENU */
@@ -246,6 +250,10 @@ font-size:34px;
 
 .hero p{
 font-size:16px;
+}
+
+.logo{
+font-size:22px;
 }
 
 }
