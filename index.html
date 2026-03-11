@@ -6,9 +6,31 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>MB Tecnologia</title>
+<title>MB Tecnologia | Soluções em TI</title>
+
+<meta name="description" content="MB Tecnologia oferece soluções em infraestrutura de TI, segurança da informação, backup em nuvem e suporte técnico especializado para empresas.">
+
+<meta name="keywords" content="suporte de TI, segurança da informação, backup em nuvem, infraestrutura de TI, suporte técnico empresas">
+
+<meta name="author" content="MB Tecnologia">
+
+<link rel="icon" type="image/png" href="images/user-original.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-XXXXXXXXXX');
+</script>
 
 <style>
 
@@ -16,7 +38,7 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:Arial, Helvetica, sans-serif;
+font-family:'Poppins', sans-serif;
 scroll-behavior:smooth;
 }
 
@@ -24,6 +46,8 @@ body{
 background:#0f172a;
 color:white;
 }
+
+/* HEADER */
 
 header{
 display:flex;
@@ -37,10 +61,19 @@ z-index:100;
 }
 
 .logo{
-font-size:32px;
-font-weight:bold;
+display:flex;
+align-items:center;
+gap:10px;
+font-size:30px;
+font-weight:600;
 color:#38bdf8;
 }
+
+.logo img{
+width:32px;
+}
+
+/* MENU */
 
 nav a{
 color:white;
@@ -53,6 +86,8 @@ transition:0.3s;
 nav a:hover{
 color:#38bdf8;
 }
+
+/* HERO */
 
 .hero{
 padding:120px 10%;
@@ -68,8 +103,8 @@ position:absolute;
 top:50%;
 left:50%;
 transform:translate(-50%,-50%);
-width:220px;
-height:220px;
+width:200px;
+height:200px;
 background-image:url("images/user-original.png");
 background-size:contain;
 background-repeat:no-repeat;
@@ -79,18 +114,16 @@ pointer-events:none;
 }
 
 .hero h1{
-font-size:46px;
+font-size:44px;
 margin-bottom:20px;
-animation:fadeUp 1s ease;
 }
 
 .hero p{
-font-size:19px;
+font-size:18px;
 color:#cbd5f5;
-max-width:700px;
+max-width:650px;
 margin:auto;
 line-height:1.6;
-animation:fadeUp 1.4s ease;
 }
 
 .btn{
@@ -99,16 +132,17 @@ margin-top:30px;
 padding:14px 28px;
 background:#38bdf8;
 color:#020617;
-font-weight:bold;
+font-weight:600;
 border-radius:8px;
 text-decoration:none;
 transition:0.3s;
-animation:fadeUp 1.8s ease;
 }
 
 .btn:hover{
 background:#0ea5e9;
 }
+
+/* SERVICES */
 
 .services{
 padding:80px 10%;
@@ -153,13 +187,16 @@ color:#38bdf8;
 
 .card h3{
 margin-bottom:10px;
+font-size:18px;
 }
 
 .card p{
 color:#cbd5f5;
-font-size:15px;
+font-size:14px;
 line-height:1.5;
 }
+
+/* CONTACT */
 
 .contact{
 padding:80px 10%;
@@ -169,7 +206,7 @@ background:#020617;
 
 .contact h2{
 font-size:34px;
-margin-bottom:20px;
+margin-bottom:15px;
 }
 
 .phone{
@@ -177,12 +214,17 @@ font-size:22px;
 margin-top:15px;
 }
 
+/* FOOTER */
+
 footer{
 text-align:center;
 padding:20px;
 background:#020617;
 color:#94a3b8;
+font-size:14px;
 }
+
+/* WHATSAPP */
 
 .whatsapp{
 position:fixed;
@@ -202,16 +244,16 @@ transition:0.3s;
 transform:scale(1.1);
 }
 
-@keyframes fadeUp{
+/* ANIMATION */
 
-from{
-opacity:0;
-transform:translateY(30px);
+@media(max-width:768px){
+
+.hero h1{
+font-size:32px;
 }
 
-to{
-opacity:1;
-transform:translateY(0);
+.hero p{
+font-size:16px;
 }
 
 }
@@ -224,7 +266,10 @@ transform:translateY(0);
 
 <header>
 
-<div class="logo">MB Tecnologia</div>
+<div class="logo">
+<img src="images/user-original.png">
+MB Tecnologia
+</div>
 
 <nav>
 <a href="#servicos">Serviços</a>
@@ -238,8 +283,7 @@ transform:translateY(0);
 <h1>Soluções inteligentes em tecnologia</h1>
 
 <p>
-Infraestrutura, segurança e suporte especializado em TI para pequenas e médias empresas.
-Tecnologia confiável para manter seu negócio sempre produtivo.
+Infraestrutura, segurança e suporte especializado em TI para empresas que buscam estabilidade, produtividade e proteção digital.
 </p>
 
 <a class="btn" href="https://wa.me/5548992092208">
@@ -257,25 +301,25 @@ Solicitar Atendimento
 <div class="card">
 <i class="fas fa-cloud"></i>
 <h3>Infraestrutura em Nuvem</h3>
-<p>Soluções seguras e escaláveis para armazenamento e acesso aos dados da sua empresa.</p>
+<p>Soluções escaláveis para armazenamento e gestão segura de dados.</p>
 </div>
 
 <div class="card">
 <i class="fas fa-shield-halved"></i>
 <h3>Segurança da Informação</h3>
-<p>Proteção estratégica contra ameaças digitais e gestão segura das informações.</p>
+<p>Proteção contra ameaças digitais e gestão segura das informações.</p>
 </div>
 
 <div class="card">
 <i class="fas fa-database"></i>
 <h3>Backup em Nuvem</h3>
-<p>Cópias seguras dos seus dados com recuperação rápida e acesso remoto.</p>
+<p>Backup automático com recuperação rápida e acesso remoto.</p>
 </div>
 
 <div class="card">
 <i class="fas fa-headset"></i>
 <h3>Suporte Técnico</h3>
-<p>Atendimento especializado para manter seus sistemas estáveis e eficientes.</p>
+<p>Atendimento especializado para manter sua infraestrutura estável.</p>
 </div>
 
 </div>
@@ -300,7 +344,7 @@ Falar no WhatsApp
 
 <footer>
 
-© 2026 MB Tecnologia - Todos os direitos reservados
+© 2026 MB Tecnologia — Todos os direitos reservados
 
 </footer>
 
@@ -320,9 +364,7 @@ const top = card.getBoundingClientRect().top;
 const windowHeight = window.innerHeight;
 
 if(top < windowHeight - 50){
-
 card.classList.add('show');
-
 }
 
 });
